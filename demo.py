@@ -310,11 +310,7 @@ def detector():
                 if elapsed_time < timer_interval:
                     time.sleep(timer_interval - elapsed_time)
 
-           
-                
-                        
-                        
-           
+
         except Exception as e:
             print(f'Error {e}')
 
@@ -387,9 +383,6 @@ while True:
                 output_path = os.path.join(output_directory, unique_filename)
                 cv2.imwrite(output_path, image)
             
-                
-                # person_count = 0
-
 
             # Display frames at the normal frame rate
             if frame_counter % display_frame_interval == 0:
